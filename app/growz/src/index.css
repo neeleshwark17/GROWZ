@@ -1,0 +1,18 @@
+.text {
+  padding-block: 0.8rem;
+  padding-inline: 3rem;
+  margin-block: 2rem;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.color {
+  margin-block: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#btns:hover {
+  background-color: #fdb548;
+}

@@ -1,0 +1,39 @@
+###
+GET http://localhost:4000/
+###
+GET http://localhost:4000/amazon/getBid/1
+
+### UpdateBid 
+POST http://localhost:4000/amazon/update/bid HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"2",
+    "update_bid_to":"color",
+    "config_user_has_to_input":"#SDFIEE"
+
+
+}
+
+### create input in UserInput Table
+POST http://localhost:4000/amazon/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "goalId":"3",
+    "userId":"3",
+    "update_bid_to":"123"
+
+}
+
+### create input in GrowzConfig Table
+POST http://localhost:4000/amazon/create/growz HTTP/1.1
+Content-Type: application/json
+
+{
+    "id":"4",
+    "name":"Bid Strategy hidden",
+    "description":"Dynamic update product bid",
+    "user_update_bid_to":"custom",
+    "update_bid_to":"datetime-local"
+}
